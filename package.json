@@ -1,15 +1,22 @@
 {
-  "name": "parcel-sandbox",
+  "name": "daily-coding-challenge",
   "version": "1.0.0",
-  "description": "Simple Parcel Sandbox",
+  "description": "Daily Coding Challenges",
   "main": "index.html",
   "scripts": {
     "start": "parcel index.html --open",
+    "test": "jest",
     "build": "parcel build index.html"
   },
+  "pre-commit": [
+    "test"
+  ],
   "dependencies": {},
   "devDependencies": {
     "@babel/core": "7.2.0",
-    "parcel-bundler": "^1.6.1"
+    "eslint": "^5.13.0",
+    "jest": "^24.1.0",
+    "parcel-bundler": "^1.6.1",
+    "pre-commit": "^1.2.2"
   }
 }
