@@ -4,9 +4,9 @@
  * For example, given[10, 15, 3, 7] and k of 17, return true since 10 + 7 is 17.
 */
 
-/**
- * loop over array over numbers
- */
+// TODO: this could be done better maybe using binary search algorithm
+// comeback and update.
+
 export default function checkTwoNumbersEqual(numbersArray, equalVal) {
   let doesSum = false;
 
